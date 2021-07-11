@@ -5,11 +5,11 @@
 body {
   height: 90%;
   width: 50%;
-  position:relative;
+  /*position:relative;
   left: 375px;
 
   top:20px;
-  box-shadow: 0px 0px 5px 2px black;
+  box-shadow: 0px 0px 5px 2px black; */
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   display: grid;
@@ -23,6 +23,8 @@ body {
   height: 30%;
   position:relative;
   left: -100px;
+  position:relative;
+  left: 100%;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -53,6 +55,11 @@ body {
   border-radius: 3px;
   box-shadow: 0px 0px 3px 1px black;
   outline: none;
+  justify-content: center;
+  position:relative;
+  left: 150%;
+  
+  
   height:30px;
   width:180px;
   padding: 0px 0px 5px 5px;
@@ -60,14 +67,19 @@ body {
 
 #label1, #label2{
   font-size:20px;
+  position:relative;
+  left: 150%;
 }
 #login-form-submit {
   width: 100%;
   padding: 7px;
   box-shadow: 0px 0px 3px 1px black;
   font-size:20px;
+  /*position:relative;
+  top: 50px; */
   position:relative;
-  top: 50px;
+  left: 150%;
+  justify-content: center;
   border: none;
   border-radius: 5px;
   color: white;
@@ -99,15 +111,12 @@ body {
     </div>
     <!--<a href = "link1()" id = "login-form-submit" onclick = "go()" >click here</a>-->
     <!--<button id = "login-form-submit" onclick = "submit">click here</button> -->
-
+    <br></br>
+    <div>
     <input type="submit" id = "login-form-submit" value="Submit" />
-    
+    </div>
   </form>
 </body>
-
-  </section>
-</body>
-
 
 
 
