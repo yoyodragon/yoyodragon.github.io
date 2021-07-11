@@ -11,18 +11,20 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: #eee;
   color: #111;
+  height:100%;
+  width:100%;
 
 }
 
 .bttn{
-  height: 120px;
-  width: 300px; 
-  background-image: url("https://www.zyto.com/wp-content/uploads/2019/11/Balance-Small-background.gif"); /*linear-gradient(45deg,yellow, orange, red); */
+  height: 8rem;
+  width: 20rem; 
+  background-image: url("https://mk0foreverambercfpx2.kinstacdn.com/wp-content/uploads/2019/04/sunset.jpg"); /*linear-gradient(45deg,yellow, orange, red); */
+  background-size: 20rem 8rem;
   color: black;
   position:relative;
-  left:100px;
-  top:120px;
-  font-size:50px;
+  top:5rem;
+  font-size:2rem;
   
 }
 
@@ -42,23 +44,18 @@ body {
   margin: 4rem;
 } 
 #title{
-  font-size: 80px;
+  font-size: 5rem;
   text-align-last: center;
 }
 #split{
-  font-size: 20px;
+  font-size: 1.5rem;
   font-weight:bold;
   position:relative;
+  top:12.5rem;
+  right:31rem;
   display: inline;
-  left:-500px;
-  top:250px;
-}
-#clock{
-  font-size:50px;
-  text-align-last:left;
-  position:relative;
-  left:900px;
-}
+  }
+
 #body, #head {
   background: linear-gradient(45deg, white, pink,white , orange);/*#f3ec78  #af4261*/
   background-size: cover;
@@ -71,7 +68,7 @@ body {
   align-items: center;
   justify-content: center;
   position:relative;
-  top: -300px;
+  top: -20rem;
   margin: 0rem 0.5rem;
   cursor: move;
   transition: opacity 0.2s;
@@ -82,14 +79,14 @@ body {
 
 
  #bttn_submit {
-  height: 50px;
-  width: 200px;
-  font-size:20px;
-  border-radius: 10px;
+  height: 3rem;
+  width: 12rem;
+  font-size:1.5rem;
+  border-radius: 2rem;
   background-color:blue;
   position: relative;
-  left: 700px;
-  top:435px;
+  left: 35rem;
+  top:27rem;
  }
 /*#background1
 {
@@ -120,9 +117,9 @@ body {
   font-size: 4rem;
   font-weight: bold;
   position:relative;
-  top:-100px;
+  top:-7rem;
   
-  border: 3px dashed #111;
+  border: 0.2rem dashed #111;
   transition: border-width 0.2s, transform 0.2s, background-color 0.4s;
 
   
@@ -137,7 +134,7 @@ body {
 
 .droppable.droppable-hover {
   background-color: #bee3f0; 
-  border-width: 1px;
+  border-width: 0.2rem;
   transform: scale(1.1);
 }
 .droppable.dropped {
@@ -150,7 +147,7 @@ body {
 .droppable.dropped span {
   font-size: 0.75rem;
   margin-top: 0.5rem;
-  font-size:20px;
+  font-size:1.5rem;
   background-color;
   font-color:black;
 }
@@ -166,10 +163,12 @@ body {
   opacity: 0.1;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 100%) {
   html { font-size: 14px; }
   .draggable-elements { margin: 3rem; }
 }
+
+
 
 
 
