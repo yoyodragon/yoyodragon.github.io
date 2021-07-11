@@ -7,15 +7,15 @@ var lname = sessionStorage.getItem("lname");
 var lmail = sessionStorage.getItem("lmail");
 var score = 0;
 let l = 0;
-var drag_text = sessionStorage.getItem("drag_text");
-var drag_val = sessionStorage.getItem("drag_val");
-var split = sessionStorage.getItem("split");
-var dragid = sessionStorage.getItem("dragid");
-var dragid2 = sessionStorage.getItem("dragid2");
-var dragid3 = sessionStorage.getItem("dragid3");
-var dragid4 = sessionStorage.getItem("dragid4");
-var dragid5 = sessionStorage.getItem("dragid5");
-var dragid6 = sessionStorage.getItem("dragid6");
+//var drag_text = sessionStorage.getItem("drag_text");
+//var drag_val = sessionStorage.getItem("drag_val");
+//var split = sessionStorage.getItem("split");
+//var dragid = sessionStorage.getItem("dragid");
+//var dragid2 = sessionStorage.getItem("dragid2");
+//var dragid3 = sessionStorage.getItem("dragid3");
+//var dragid4 = sessionStorage.getItem("dragid4");
+//var dragid5 = sessionStorage.getItem("dragid5");
+//var dragid6 = sessionStorage.getItem("dragid6");
 
 function sendEmail(params){
   var TempParams = {
