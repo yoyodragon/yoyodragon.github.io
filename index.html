@@ -1,38 +1,109 @@
 
+<head>
+  <script src = "form.js"> </script>
+  <style>
+body {
+  height: 90%;
+  width: 50%;
+  position:relative;
+  left: 375px;
 
-<h1 id = "title">समास के भेद</h1>
+  top:20px;
+  box-shadow: 0px 0px 5px 2px black;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(45deg, white, pink, yellow);
+}
 
-<head id = "head">
-  <script src="ssc.js" defer></script>
-  <link rel="stylesheet" href="./ssc.css">
-  <audio id = "correct_audio">
-    <source src = "correct3.mp3" />
-  </audio>
-  <audio id = "wrong_audio">
-    <source src="wrong1.mp3" />
-  </audio>
+#main-holder {
+  width: 190%;
+  height: 30%;
+  position:relative;
+  left: -100px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 0px 0px 5px 2px black;
+}
 
+
+
+
+#login-form {
+  align-self: flex-start;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form-field::placeholder {
+  color: #3a3a3a;
+}
+
+.login-form-field {
+  border: none;
+  border-bottom: 1px solid #3a3a3a;
+  font-size: 15px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 3px 1px black;
+  outline: none;
+  height:30px;
+  width:180px;
+  padding: 0px 0px 5px 5px;
+}
+
+#label1, #label2{
+  font-size:20px;
+}
+#login-form-submit {
+  width: 100%;
+  padding: 7px;
+  box-shadow: 0px 0px 3px 1px black;
+  font-size:20px;
+  position:relative;
+  top: 50px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  background-color: darkblue;
+  cursor: pointer;
+  outline: none;
+}
+
+
+</style>
 </head>
-<body id = "body" >
-  <button class = "bttn" id = "bttnid" onclick = "click1()"  style="left:-5px">
-    Click for new card
-  </button>
-  <form action="https://formspree.io/ved.bankeshwar@gmail.com" method="POST">
-    <input type="text" name="name">
-    <input type="email" name="_replyto">
-    <input type="submit" value="Send">
-  </form>
-  
-  <section class="droppable-elements">
-    <div class="droppable" id="d1avyay" ><span>अव्ययीभाव</span></div>
 
-    <div class="droppable"id="d2bahu"><span>बहुव्रीहि</span></div>
+<body>
+  
+  <main id = "main-holder">
+    <h1>LOGIN </h1>
+  </main>
+  
+  <form name="loginform" id = "login-form" class="form" onsubmit="return validate();" action="./ssc.html">
     
-    <div class="droppable"id="d3dvandh"><span>द्वंद्व</span></div>
+    <div>
+      <label value = "Name"id = "label1" > Name </label>
+      <input align = "middle" required type="text" class="login-form-field" placeholder = "what is your name" id = "lname" />
+    </div>
+    <div>
+      <label value = "Email" id = "label2"> Email </label>
+      <input align = "middle" required type="email"  class="login-form-field" placeholder = "what is your email id" id = "lmail" />
+    </div>
+    <!--<a href = "link1()" id = "login-form-submit" onclick = "go()" >click here</a>-->
+    <!--<button id = "login-form-submit" onclick = "submit">click here</button> -->
+
+    <input type="submit" id = "login-form-submit" value="Submit" />
     
-    <div class="droppable"id="d4dvigu" ><span>द्विगु</span></div>
-    
-    <div class="droppable"id="d5karma" ><span>कर्मधारय</span></div>
+  </form>
+</body>
     
     <div class="droppable"id="d6tathpuru" ><span>तत्पुरुष</span></div>
         
