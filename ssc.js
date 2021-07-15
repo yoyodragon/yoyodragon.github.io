@@ -25,12 +25,10 @@ function sendEmail(params){
   
   emailjs.send("service_w7i4hqi", "template_n4w0qef", TempParams)
   .then(function(res){
-    console.log("success", res.status):
+    console.log("success", res.status);
   })
   //alert("your score is : " + score + " No. of questions answered : " + (l-1));
-  
-
-
+ 
 }
 
 function new_page(){
