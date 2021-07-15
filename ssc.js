@@ -12,15 +12,16 @@ let a;
 function sendEmail(params){
   sessionStorage.setItem("score", score);
   sessionStorage.setItem("questions", l);
-  a = document.createElement('a');
-  a.href = './end_card.html';
-  a.click();
-
   var TempParams = {
     to_name: lname,
     message: "score : " + score + ", number of questions answered : " + (l-1),
     to_email: lmail,
   };
+  a = document.createElement('a');
+  a.href = './end_card.html';
+  a.click();
+
+  
 
   
 
