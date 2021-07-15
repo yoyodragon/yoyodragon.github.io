@@ -1,7 +1,7 @@
 function open_page(){
   let a = document.createElement('a');
   //a.target= '_blank';
-  a.href = './ssc.html';
+  a.href = './main.html';
   a.click();
 };
 
