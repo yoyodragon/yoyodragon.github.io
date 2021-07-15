@@ -7,17 +7,15 @@ var lname = sessionStorage.getItem("lname");
 var lmail = sessionStorage.getItem("lmail");
 var score = 0;
 let l = 0;
-//var drag_text = sessionStorage.getItem("drag_text");
-//var drag_val = sessionStorage.getItem("drag_val");
-//var split = sessionStorage.getItem("split");
-//var dragid = sessionStorage.getItem("dragid");
-//var dragid2 = sessionStorage.getItem("dragid2");
-//var dragid3 = sessionStorage.getItem("dragid3");
-//var dragid4 = sessionStorage.getItem("dragid4");
-//var dragid5 = sessionStorage.getItem("dragid5");
-//var dragid6 = sessionStorage.getItem("dragid6");
+let a;
 
 function sendEmail(params){
+  sessionStorage.setItem("score", score);
+  sessionStorage.setItem("questions", l);
+  a = document.createElement('a');
+  a.href = './end_card.html';
+  a.click();
+
   var TempParams = {
     to_name: lname,
     message: "score : " + score + ", number of questions answered : " + (l-1),
@@ -30,7 +28,7 @@ function sendEmail(params){
   .then(function(res){
     console.log("success", res.status);
   })
-  alert("your score is : " + score + " No. of questions answered : " + (l-1));
+  //alert("your score is : " + score + " No. of questions answered : " + (l-1));
 }
 
 function new_page(){
@@ -210,6 +208,6 @@ function elementClear(){
     if (elemid_drop != null){
 
       elemid_drop.classList.remove("dropped");
-      elemid_drop.setAttribute("style", "background-color: white;")
+      elemid_drop.setAttribute("style", "background-color: white;");
     }
-}
+};
