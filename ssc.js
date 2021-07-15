@@ -17,9 +17,7 @@ function sendEmail(params){
     message: "score : " + score + ", number of questions answered : " + (l-1),
     to_email: lmail,
   };
-  a = document.createElement('a');
-  a.href = './end_card.html';
-  a.click();
+  
 
   
 
@@ -29,6 +27,9 @@ function sendEmail(params){
   .then(function(res){
     console.log("success", res.status);
   })
+  a = document.createElement('a');
+  a.href = './end_card.html';
+  a.click();
   //alert("your score is : " + score + " No. of questions answered : " + (l-1));
 }
 
