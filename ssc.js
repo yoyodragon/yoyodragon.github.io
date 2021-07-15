@@ -9,6 +9,12 @@ var score = 0;
 let l = 0;
 let a;
 
+function new_page(){
+  a = document.createElement('a');
+  a.href = './end_card.html';
+  a.click();
+}
+
 function sendEmail(params){
   let check = 1;
   sessionStorage.setItem("score", score);
@@ -32,11 +38,7 @@ function sendEmail(params){
  
 }
 
-function new_page(){
-  a = document.createElement('a');
-  a.href = './end_card.html';
-  a.click();
-}
+
 function random1(array, array1, array2){
   m = 0;
   while (m < (array.length - 2)){
