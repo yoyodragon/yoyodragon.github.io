@@ -10,31 +10,34 @@ let l = 0;
 let a;
 
 function sendEmail(params){
+  let check = 1;
   sessionStorage.setItem("score", score);
   sessionStorage.setItem("questions", l);
+  
+
   var TempParams = {
     to_name: lname,
-    message: "score : " + score + ", number of questions answered : " + (l-1),
+    message: "score : " + score + ", number of questions answered : " + (l) + " name : " + lname + " mail : " + lmail,
     to_email: lmail,
   };
-  
 
   
-
   
-
   emailjs.send("service_w7i4hqi", "template_n4w0qef", TempParams)
   .then(function(res){
     console.log("success", res.status);
+    new_page();
   })
-  a = document.createElement('a');
-  a.href = './end_card.html';
-  a.click();
   //alert("your score is : " + score + " No. of questions answered : " + (l-1));
+  
+
+
 }
 
 function new_page(){
-  
+  a = document.createElement('a');
+  a.href = './end_card.html';
+  a.click();
 }
 function random1(array, array1, array2){
   m = 0;
