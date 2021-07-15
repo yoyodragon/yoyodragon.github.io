@@ -23,7 +23,10 @@ function sendEmail(params){
 
   var TempParams = {
     to_name: lname,
-    message: "score : " + score + ", number of questions answered : " + (l) + " name : " + lname + " mail : " + lmail,
+    message: "score : " + score + "
+    , number of questions answered : " + (l) + " 
+    name : " + lname + "
+    mail : " + lmail,
     to_email: lmail,
   };
 
