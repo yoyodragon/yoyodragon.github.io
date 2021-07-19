@@ -55,7 +55,7 @@ body {
   }
 
 #body, #head {
-  background: linear-gradient(45deg, white, pink,white , orange);/*#f3ec78  #af4261*/
+  background-image: url("https://wallpapercave.com/wp/wp3440148.jpg");
   background-size: 100%;
   background-size: cover;
 }
