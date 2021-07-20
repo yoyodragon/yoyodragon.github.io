@@ -7,13 +7,18 @@
   
 
 }
+
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #eee;
   color: #111;
 
 }
+#img{
+  height:0.2rem;
+  width:0.1rem;
 
+}
 .bttn{
   height: 8rem;
   width: 20rem; 
