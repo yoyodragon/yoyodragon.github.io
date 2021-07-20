@@ -10,7 +10,8 @@
 
 #para {
   font-size:3rem;
-  justify-content: center;
+  position:relative;
+  left:100%;
 }
 
 
