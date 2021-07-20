@@ -8,6 +8,12 @@
 
 }
 
+#para {
+  font-size:3rem;
+  justify-content: center;
+}
+
+
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #eee;
