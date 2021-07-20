@@ -22,7 +22,7 @@ body {
 .bttn{
   height: 8rem;
   width: 20rem; 
-  background-image: url("https://mk0foreverambercfpx2.kinstacdn.com/wp-content/uploads/2019/04/sunset.jpg"); /*linear-gradient(45deg,yellow, orange, red); */
+  background-image: url("./btn_background.jpeg"); /*linear-gradient(45deg,yellow, orange, red); */
   background-size: 20rem 8rem;
   color: black;
   position:relative;
