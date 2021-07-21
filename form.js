@@ -1,7 +1,7 @@
 function open_page(){
   let a = document.createElement('a');
   //a.target= '_blank';
-  a.href = './instructions.html';
+  a.href = './Instructions.html';
   a.click();
 };
 
