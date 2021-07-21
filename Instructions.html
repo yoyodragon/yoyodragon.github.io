@@ -1,0 +1,57 @@
+
+<body id = "body">
+	<div>
+	<h1 id = "h1">Instructions</h1>
+	<p id = "para2">4 points will be awarded for a correct answer and 1 point will be deducted for a wrong answer.Drag and drop the words to the correct type</p>
+	<br></br>
+	<br></br>
+	<button id = "inst_btn" onclick = "click3()"> Next </button>
+    </div>
+</body>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		#body{
+			background-image:linear-gradient(45deg, yellow, pink, white);
+			background-size: cover;
+			background-repeat: no-repeat;
+			width:70%;
+
+		}
+        #para2{
+        	position: relative;
+        	left:1%;
+        	font-size: 2.5rem;
+        }
+		#h1{
+            position:relative;
+            left:40%;
+            font-size: 5rem;
+            font-weight: bold;
+
+
+		}
+
+		#inst_btn{
+			height:3rem;
+			width:12rem;
+			position:relative;
+			top:40%;
+            left:50%;
+            background-color: blue;
+            border-radius: 5rem;
+		}
+
+	</style>
+	<script type="text/javascript">
+		var btn3 = document.getElementById("inst_btn");
+
+		function click3(){
+			a = document.createElement("a");
+			a.href = "./main.html";
+			a.click();
+		}
+	</script>
+</head>
+
