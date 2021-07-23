@@ -50,6 +50,7 @@ body {
 
 .draggable-elements { 
   display: flex;
+  background-color:#FAF0E6
   justify-content: center;
   margin: 4rem;
 } 
