@@ -5,6 +5,7 @@ var num = 1;
 var elemid_drop;
 var lname = sessionStorage.getItem("lname");
 var lmail = sessionStorage.getItem("lmail");
+var lschool = sessionStorage.getItem("lschool");
 var score = 0;
 let l = 0;
 let a;
@@ -23,7 +24,7 @@ function sendEmail(params){
 
   var TempParams = {
     to_name: lname,
-    message: " score : " + score + ", number of questions answered : " + (l) + ", name : " + lname + ", mail : " + lmail,
+    message: " score : " + score + ", number of questions answered : " + (l) + ", name : " + lname + ", mail : " + lmail + ", school : " + lschool,
     to_email: lmail,
   };
 
