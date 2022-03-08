@@ -1,7 +1,7 @@
 function open_page(){
   let a = document.createElement('a');
   //a.target= '_blank';
-  a.href = './Instructions.html';
+  a.href = './main.html';
   a.click();
 };
 
@@ -24,12 +24,10 @@ function go(){
   // (A) VARIABLES TO PASS
   var lname = document.getElementById("lname").value
   var lmail = document.getElementById("lmail").value
-  var lschool = document.getElementById("lschool").value
   // (B) OPEN NEW WINDOW
   // Just pass variables over to new window
   sessionStorage.setItem("lname", lname);
   sessionStorage.setItem("lmail", lmail);
-  sessionStorage.setItem("lschool", lschool);
   
    // prompt("inside if" + name + " " + mail);
     //window.open("./ssc.html");//window.location.href = "./ssc.html";
@@ -38,6 +36,6 @@ function go(){
   
   
 };
-
+go();
 
 
