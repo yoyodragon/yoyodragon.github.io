@@ -1,5 +1,4 @@
 
-
 * {
   margin: 0;
   padding: 0;
@@ -17,8 +16,8 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #eee;
-  color: #111;
+  background-color: white;
+  color: black;
 
 }
 #img{
@@ -28,8 +27,10 @@ body {
 }
 .bttn{
   height: 8rem;
-  width: 20rem; 
-  background-image: url("./btn_background.jpeg"); /*linear-gradient(45deg,yellow, orange, red); */
+  width: 20rem;
+  background-color: white; 
+  font : black;
+  /*background-image: url("./btn_background.jpeg"); linear-gradient(45deg,yellow, orange, red); */
   background-size: 20rem 8rem;
   color: black;
   position:relative;
@@ -68,8 +69,9 @@ body {
   }
 
 #body, #head {
-  background-image: url("https://wallpapercave.com/wp/wp3440148.jpg");
+  background-color: : white;
   background-size: 100%;
+  font : black;
   background-size: cover;
 }
 
@@ -98,6 +100,7 @@ body {
   border-radius: 2rem;
   background-color:blue;
   position: relative;
+  color: white;
   left: 35rem;
   top:27rem;
  }
@@ -106,7 +109,6 @@ body {
     position: absolute;
     width: 100%;
     z-index: 0;
-
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -122,7 +124,7 @@ body {
   height: 4rem;
   width: 10rem;
   margin: 1rem auto;
-  background-color: #FAF0E6;
+  background-color: white;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -141,20 +143,21 @@ body {
 .droppable span {
   font-size: 1.25rem;
   pointer-events: none; /* The element is never the target of pointer events */
+  font : black;
 
 }
 
 /* Drag and Drop Related Styling */
 
 .droppable.droppable-hover {
-  background-color: #bee3f0; 
+  background-color: white;
   border-width: 0.2rem;
   transform: scale(1.1);
 }
 .droppable.dropped {
-  background-color:white;
+  background-color:black;
   border-style: solid;
-  color: #fff;
+  color: white;/*#fff */
   
 
 }
@@ -162,7 +165,7 @@ body {
   font-size: 0.75rem;
   margin-top: 0.5rem;
   font-size:1.5rem;
-  background-color;
+  background-color:black;
   font-color:black;
 }
 .droppable.dropped div {
@@ -181,5 +184,3 @@ body {
   html { font-size: 14px; }
   .draggable-elements { margin: 3rem; }
 }
-
-
