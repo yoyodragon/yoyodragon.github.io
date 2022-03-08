@@ -136,7 +136,7 @@ function click1(){
   else{
     prompt(" No more values remain");
   }
-  document.getElementById("split_new").innerHTML = drag_text[l-1] + " : " + split[l-1];
+  document.getElementById("split").innerHTML = drag_text[l-1] + " : " + split[l-1];
 }
 
 
@@ -225,7 +225,9 @@ function drop(event) {
    }
 
   else{
+    
     wrong_music(draggableElementData)
+    
     score = score - 1;
   }
   //document.getElementById("clock").innerHTML = "Score : " + score;
