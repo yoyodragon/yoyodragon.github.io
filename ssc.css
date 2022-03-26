@@ -60,12 +60,13 @@ body {
   text-align-last: center;
 }
 #split{
-  font-size: 40px;
+  font-size: 1.5rem;
   font-weight:bold;
   position:relative;
-  left:-900px;
-  top:275px;
-}
+  top:12.5rem;
+  right:31rem;
+  display: inline;
+  }
 
 #body, #head {
   background-color: : white;
