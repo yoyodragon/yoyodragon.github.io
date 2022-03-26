@@ -32,7 +32,7 @@ function go(){
    // prompt("inside if" + name + " " + mail);
     //window.open("./ssc.html");//window.location.href = "./ssc.html";
     //prompt("inside if" + name + " " + mail);
-  // prompt(lname, lmail);
+  // prompt(lname, lmail);.
   
   
 };
